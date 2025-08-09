@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hamdan Elahi - Frontend Developer specializing in HTML, CSS, JavaScript. Creating modern, responsive web solutions.">
+    <meta name="keywords" content="frontend developer, web developer, HTML, CSS, JavaScript, portfolio">
+    <meta name="author" content="Hamdan Elahi">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Hamdan Elahi - Frontend Developer">
+    <meta property="og:description" content="Frontend Developer specializing in HTML, CSS, JavaScript. Creating modern, responsive web solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hamdanelahi.github.io/hamdanelahi-portfolio/">
+    <meta property="og:image" content="https://hamdanelahi.github.io/hamdanelahi-portfolio/assets/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hamdan Elahi - Frontend Developer">
+    <meta name="twitter:description" content="Frontend Developer specializing in HTML, CSS, JavaScript. Creating modern, responsive web solutions.">
+    <meta name="twitter:image" content="https://hamdanelahi.github.io/hamdanelahi-portfolio/assets/og-image.jpg">
+    
+    <title>Hamdan Elahi - Frontend Developer | Turning Ideas into Web Reality</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <i class="fas fa-code"></i>
+                    <span>Hamdan</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="assets/resume.pdf" class="nav-link resume-btn" download>
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Hamdan Elahi</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Turning Ideas into <span class="highlight">Web Reality</span>
+                </h2>
+                <p class="hero-description">
+                    Frontend Developer passionate about creating modern, responsive, and user-friendly web experiences using HTML, CSS, and JavaScript.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/HamdanElahi" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hamdan-elahi-691306372/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hamadanelahi.org@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="hero-img-container">
+                    <img src="assets/hero-image.png" alt="Hamdan Elahi - Frontend Developer" loading="lazy">
+                    <div class="hero-img-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Frontend Developer & Problem Solver</h3>
+                    <p>
+                        I'm a passionate frontend developer with a strong foundation in HTML, CSS, and JavaScript. 
+                        I love creating clean, efficient, and user-friendly web experiences that solve real-world problems.
+                    </p>
+                    
+                    <h4>Current Goals</h4>
+                    <p>
+                        I'm focused on expanding my skills in modern JavaScript frameworks like React and Vue.js, 
+                        while also diving deeper into backend technologies to become a well-rounded full-stack developer.
+                    </p>
+                    
+                    <h4>What I'm Learning</h4>
+                    <ul class="learning-list">
+                        <li><i class="fas fa-check"></i> React.js & Modern JavaScript (ES6+)</li>
+                        <li><i class="fas fa-check"></i> Node.js & Express.js</li>
+                        <li><i class="fas fa-check"></i> Database Management (MongoDB, MySQL)</li>
+                        <li><i class="fas fa-check"></i> Version Control with Git & GitHub</li>
+                        <li><i class="fas fa-check"></i> Responsive Design & CSS Grid/Flexbox</li>
+                    </ul>
+                    
+                    <h4>What I'm Looking For</h4>
+                    <p>
+                        I'm actively seeking frontend development opportunities, internships, and freelance projects 
+                        where I can contribute my skills while continuing to learn and grow as a developer.
+                    </p>
+                </div>
+                <div class="about-skills" data-aos="fade-left">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Responsive Design</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I can do for you</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>Clean, fast-loading single-page websites that convert visitors into customers with modern design and optimized performance.</p>
+                    <ul class="service-features">
+                        <li>Responsive Design</li>
+                        <li>SEO Optimized</li>
+                        <li>Fast Loading</li>
+                        <li>Cross-browser Compatible</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Portfolio Sites</h3>
+                    <p>Fully responsive personal pages for creators and freelancers to showcase their work and attract potential clients.</p>
+                    <ul class="service-features">
+                        <li>Custom Design</li>
+                        <li>Portfolio Gallery</li>
+                        <li>Contact Forms</li>
+                        <li>Social Integration</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>HTML/CSS Fixes</h3>
+                    <p>Quick edits, styling issues, and mobile responsiveness fixes to improve your existing website's performance.</p>
+                    <ul class="service-features">
+                        <li>Bug Fixes</li>
+                        <li>Mobile Optimization</li>
+                        <li>Performance Improvements</li>
+                        <li>Code Cleanup</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">My recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="assets/project-todo.jpg" alt="To-Do App Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="todo-list.html" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/HamdanElahi/Todolist" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>To-Do App</h3>
+                        <p>Simple productivity app using HTML, CSS & JavaScript with local storage functionality for task persistence.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                        <div class="project-details">
+                            <h4>Problem Solved:</h4>
+                            <p>Created a simple task management solution that helps users organize their daily activities with persistent data storage.</p>
+                            <h4>What I Learned:</h4>
+                            <p>DOM manipulation, event handling, local storage API, and creating responsive user interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="assets/project-blog.jpg" alt="Personal Blog Layout Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="personal-blog.html" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/HamdanElahi/personalblog" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Blog Layout</h3>
+                        <p>Blog homepage mockup built from scratch with modern design principles and responsive layout techniques.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Flexbox</span>
+                            <span class="tech-tag">CSS Grid</span>
+                        </div>
+                        <div class="project-details">
+                            <h4>Problem Solved:</h4>
+                            <p>Designed a clean, readable blog layout that works seamlessly across all device sizes and screen resolutions.</p>
+                            <h4>What I Learned:</h4>
+                            <p>Advanced CSS layout techniques, typography principles, and responsive design best practices.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/project-resume.jpg" alt="Responsive Resume Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="responsive-resume.html" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/HamdanElahi/responsive-resume" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Responsive Resume</h3>
+                        <p>HTML/CSS resume with interactive sections, print-friendly styling, and mobile-first responsive design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Print CSS</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-details">
+                            <h4>Problem Solved:</h4>
+                            <p>Created a professional online resume that looks great on screen and maintains formatting when printed.</p>
+                            <h4>What I Learned:</h4>
+                            <p>Print CSS media queries, accessibility best practices, and creating professional web documents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Collaborate</h3>
+                    <p>Have an idea? Want to collaborate? I'm always excited to work on new projects and help bring your vision to life.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>hamadanelahi.org@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Available for remote work</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Response Time</h4>
+                            <p>Usually within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://github.com/HamdanElahi" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hamdan-elahi-691306372/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:hamadanelahi.org@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" data-aos="fade-left" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Hamdan Elahi. All rights reserved.</p>
+                    <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/HamdanElahi" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hamdan-elahi-691306372/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hamadanelahi.org@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

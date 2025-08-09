@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan - Personal Blog</title>
+    <meta name="description" content="Personal blog of Alex Morgan - Web Developer, Designer, and Tech Enthusiast">
+    <meta name="keywords" content="web development, design, technology, programming, blog">
+    <meta name="author" content="Alex Morgan">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="personal-blog.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2"/>
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">
+                    <span class="brand-icon">📝</span>
+                    <span class="brand-text">Alex Morgan</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hello, I'm</span>
+                        <span class="title-name">Alex Morgan</span>
+                        <span class="title-subtitle">Web Developer & Designer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Welcome to my digital space where I share insights about web development, 
+                        design trends, and the ever-evolving world of technology. Join me on this 
+                        journey of continuous learning and creative exploration.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#blog" class="btn btn-primary">Read My Blog</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="profile-image">
+                            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="90" fill="url(#profileGradient)"/>
+                                <circle cx="100" cy="80" r="30" fill="white" opacity="0.9"/>
+                                <path d="M60 140 Q100 120 140 140 Q140 160 100 170 Q60 160 60 140Z" fill="white" opacity="0.9"/>
+                                <defs>
+                                    <linearGradient id="profileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea"/>
+                                        <stop offset="100%" style="stop-color:#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="150">0</span>
+                    <span class="stat-label">Blog Posts</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about creating digital experiences</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate web developer and designer with over 10 years of experience 
+                        creating digital solutions that make a difference. My journey in tech started 
+                        with curiosity and has evolved into a deep love for crafting beautiful, 
+                        functional web experiences.
+                    </p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Vue.js</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">CSS3</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Design</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Adobe XD</span>
+                                <span class="skill-tag">UI/UX</span>
+                                <span class="skill-tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <p class="section-subtitle">Thoughts, tutorials, and insights from my journey</p>
+            </div>
+            
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">All Posts</button>
+                <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="thoughts">Thoughts</button>
+            </div>
+            
+            <div class="blog-grid" id="blogGrid">
+                <!-- Featured Post -->
+                <article class="blog-card featured" data-category="tutorial">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="url(#cardGradient1)"/>
+                                <circle cx="100" cy="100" r="30" fill="white" opacity="0.2"/>
+                                <circle cx="300" cy="60" r="20" fill="white" opacity="0.3"/>
+                                <circle cx="320" cy="140" r="25" fill="white" opacity="0.1"/>
+                                <defs>
+                                    <linearGradient id="cardGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea"/>
+                                        <stop offset="100%" style="stop-color:#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="card-category">Tutorial</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Building Modern Web Applications with React and TypeScript</h3>
+                        <p class="card-excerpt">
+                            A comprehensive guide to creating scalable and maintainable web applications 
+                            using React, TypeScript, and modern development practices.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-date">March 15, 2024</span>
+                            <span class="card-read-time">8 min read</span>
+                        </div>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </article>
+                
+                <!-- Regular Posts -->
+                <article class="blog-card" data-category="design">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="url(#cardGradient2)"/>
+                                <path d="M50 150 Q200 50 350 150" stroke="white" stroke-width="3" fill="none" opacity="0.3"/>
+                                <circle cx="200" cy="100" r="40" fill="white" opacity="0.1"/>
+                                <defs>
+                                    <linearGradient id="cardGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f093fb"/>
+                                        <stop offset="100%" style="stop-color:#f5576c"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="card-category">Design</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">The Art of Minimalist Web Design</h3>
+                        <p class="card-excerpt">
+                            Exploring the principles of minimalist design and how to apply them 
+                            effectively in modern web interfaces.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-date">March 10, 2024</span>
+                            <span class="card-read-time">5 min read</span>
+                        </div>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-category="development">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="url(#cardGradient3)"/>
+                                <rect x="50" y="50" width="80" height="60" fill="white" opacity="0.2" rx="5"/>
+                                <rect x="150" y="70" width="100" height="40" fill="white" opacity="0.3" rx="5"/>
+                                <rect x="270" y="60" width="80" height="50" fill="white" opacity="0.1" rx="5"/>
+                                <defs>
+                                    <linearGradient id="cardGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4facfe"/>
+                                        <stop offset="100%" style="stop-color:#00f2fe"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="card-category">Development</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Optimizing Web Performance in 2024</h3>
+                        <p class="card-excerpt">
+                            Latest techniques and tools for improving web performance, from Core Web Vitals 
+                            to advanced optimization strategies.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-date">March 5, 2024</span>
+                            <span class="card-read-time">12 min read</span>
+                        </div>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-category="thoughts">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="url(#cardGradient4)"/>
+                                <circle cx="200" cy="100" r="60" fill="white" opacity="0.1"/>
+                                <circle cx="200" cy="100" r="30" fill="white" opacity="0.2"/>
+                                <circle cx="200" cy="100" r="15" fill="white" opacity="0.3"/>
+                                <defs>
+                                    <linearGradient id="cardGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#a8edea"/>
+                                        <stop offset="100%" style="stop-color:#fed6e3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="card-category">Thoughts</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">The Future of Web Development</h3>
+                        <p class="card-excerpt">
+                            Reflecting on emerging trends and technologies that will shape the future 
+                            of web development and user experiences.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-date">February 28, 2024</span>
+                            <span class="card-read-time">7 min read</span>
+                        </div>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-category="tutorial">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="url(#cardGradient5)"/>
+                                <polygon points="100,50 150,100 100,150 50,100" fill="white" opacity="0.2"/>
+                                <polygon points="250,60 300,110 250,160 200,110" fill="white" opacity="0.3"/>
+                                <polygon points="320,40 360,80 320,120 280,80" fill="white" opacity="0.1"/>
+                                <defs>
+                                    <linearGradient id="cardGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffecd2"/>
+                                        <stop offset="100%" style="stop-color:#fcb69f"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="card-category">Tutorial</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">CSS Grid vs Flexbox: When to Use What</h3>
+                        <p class="card-excerpt">
+                            A practical guide to understanding the differences between CSS Grid and Flexbox, 
+                            with real-world examples and use cases.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-date">February 20, 2024</span>
+                            <span class="card-read-time">10 min read</span>
+                        </div>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-category="design">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="url(#cardGradient6)"/>
+                                <path d="M0 100 Q100 50 200 100 T400 100" stroke="white" stroke-width="4" fill="none" opacity="0.3"/>
+                                <circle cx="100" cy="100" r="20" fill="white" opacity="0.4"/>
+                                <circle cx="300" cy="100" r="15" fill="white" opacity="0.2"/>
+                                <defs>
+                                    <linearGradient id="cardGradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#d299c2"/>
+                                        <stop offset="100%" style="stop-color:#fef9d7"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="card-category">Design</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Color Theory for Web Designers</h3>
+                        <p class="card-excerpt">
+                            Understanding color psychology and how to create harmonious color palettes 
+                            that enhance user experience and brand identity.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-date">February 15, 2024</span>
+                            <span class="card-read-time">6 min read</span>
+                        </div>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-actions">
+                <button class="btn btn-outline" id="loadMoreBtn">Load More Posts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work and side projects</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <svg width="100%" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="url(#projectGradient1)"/>
+                                <rect x="50" y="50" width="300" height="150" fill="white" opacity="0.1" rx="10"/>
+                                <rect x="70" y="70" width="80" height="20" fill="white" opacity="0.3" rx="5"/>
+                                <rect x="70" y="100" width="120" height="15" fill="white" opacity="0.2" rx="3"/>
+                                <rect x="70" y="125" width="100" height="15" fill="white" opacity="0.2" rx="3"/>
+                                <defs>
+                                    <linearGradient id="projectGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea"/>
+                                        <stop offset="100%" style="stop-color:#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 19C4.7 19 1 15.3 1 11S4.7 3 9 3 17 6.7 17 11C17 12.4 16.6 13.7 15.9 14.8L22 20.9L20.9 22L14.8 15.9C13.7 16.6 12.4 17 11 17H9V19Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A modern e-commerce platform built with React, Node.js, and PostgreSQL. 
+                            Features include real-time inventory, payment processing, and admin dashboard.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <svg width="100%" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="url(#projectGradient2)"/>
+                                <circle cx="200" cy="125" r="80" fill="white" opacity="0.1"/>
+                                <circle cx="200" cy="125" r="50" fill="white" opacity="0.2"/>
+                                <circle cx="200" cy="125" r="25" fill="white" opacity="0.3"/>
+                                <defs>
+                                    <linearGradient id="projectGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f093fb"/>
+                                        <stop offset="100%" style="stop-color:#f5576c"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 19C4.7 19 1 15.3 1 11S4.7 3 9 3 17 6.7 17 11C17 12.4 16.6 13.7 15.9 14.8L22 20.9L20.9 22L14.8 15.9C13.7 16.6 12.4 17 11 17H9V19Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A collaborative task management application with real-time updates, 
+                            team collaboration features, and advanced project tracking capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <svg width="100%" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="url(#projectGradient3)"/>
+                                <path d="M50 200 Q100 150 150 180 T250 160 T350 180" stroke="white" stroke-width="4" fill="none" opacity="0.3"/>
+                                <circle cx="100" cy="170" r="8" fill="white" opacity="0.5"/>
+                                <circle cx="200" cy="160" r="8" fill="white" opacity="0.5"/>
+                                <circle cx="300" cy="175" r="8" fill="white" opacity="0.5"/>
+                                <defs>
+                                    <linearGradient id="projectGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4facfe"/>
+                                        <stop offset="100%" style="stop-color:#00f2fe"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 19C4.7 19 1 15.3 1 11S4.7 3 9 3 17 6.7 17 11C17 12.4 16.6 13.7 15.9 14.8L22 20.9L20.9 22L14.8 15.9C13.7 16.6 12.4 17 11 17H9V19Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            A comprehensive analytics dashboard with real-time data visualization, 
+                            custom reports, and interactive charts for business intelligence.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Have a project in mind or just want to chat?</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>alex.morgan@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 14C16 14 20 16 20 18V20H4V18C4 16 8 14 12 14Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Social</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">Twitter</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Alex Morgan</h3>
+                    <p>Web Developer & Designer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Thoughts</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alex Morgan. All rights reserved.</p>
+                <p>Built with ❤️ using modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="personal-blog.js"></script>
+</body>
+</html>
+

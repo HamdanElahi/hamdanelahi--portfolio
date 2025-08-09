@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Johnson - Senior Web Developer</title>
+    <meta name="description" content="Professional resume of Sarah Johnson - Senior Web Developer with 8+ years of experience">
+    <meta name="keywords" content="web developer, frontend, backend, full-stack, resume, portfolio">
+    <meta name="author" content="Sarah Johnson">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="responsive-resume.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
+</head>
+<body>
+    <!-- Print Button -->
+    <button id="printBtn" class="print-btn" aria-label="Print resume">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="6,9 6,2 18,2 18,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="6" y="14" width="12" height="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Print
+    </button>
+
+    <!-- Download Button -->
+    <button id="downloadBtn" class="download-btn" aria-label="Download resume as PDF">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Download PDF
+    </button>
+
+    <!-- Main Container -->
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header class="resume-header">
+            <div class="header-background">
+                <div class="bg-pattern"></div>
+            </div>
+            
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <div class="image-container">
+                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="60" cy="60" r="55" fill="url(#profileGradient)"/>
+                                <circle cx="60" cy="45" r="18" fill="white" opacity="0.9"/>
+                                <path d="M30 85 Q60 70 90 85 Q90 100 60 105 Q30 100 30 85Z" fill="white" opacity="0.9"/>
+                                <defs>
+                                    <linearGradient id="profileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea"/>
+                                        <stop offset="100%" style="stop-color:#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="status-indicator online"></div>
+                    </div>
+                    
+                    <div class="profile-info">
+                        <h1 class="name">Sarah Johnson</h1>
+                        <h2 class="title">Senior Web Developer</h2>
+                        <p class="tagline">Crafting exceptional digital experiences with modern web technologies</p>
+                        
+                        <div class="quick-stats">
+                            <div class="stat">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-section">
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">sarah.johnson@email.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.59344 1.99522 8.06544 2.16708 8.43945 2.48353C8.81346 2.79999 9.06681 3.23945 9.15999 3.72C9.33657 4.68007 9.63248 5.61273 10.04 6.5C10.2 6.89 10.19 7.33 9.99999 7.71L8.80999 9.91C10.1851 12.4135 12.5865 14.8149 15.09 16.19L17.29 15C17.67 14.81 18.11 14.8 18.5 14.96C19.3873 15.3675 20.3199 15.6634 21.28 15.84C21.7658 15.9336 22.2094 16.1910 22.5265 16.5694C22.8437 16.9479 23.0122 17.4240 23 17.91V20.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">San Francisco, CA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 19C5 19 2 16 2 12S5 5 9 5H15C19 5 22 8 22 12S19 19 15 19H9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 9L12 12L9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Website</span>
+                                <span class="contact-value">sarahjohnson.dev</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 14C16 14 20 16 20 18V20H4V18C4 16 8 14 12 14Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/sarahjohnson</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 19C4.7 19 1 15.3 1 11S4.7 3 9 3 17 6.7 17 11C17 12.4 16.6 13.7 15.9 14.8L22 20.9L20.9 22L14.8 15.9C13.7 16.6 12.4 17 11 17H9V19Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/sarahjohnson</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="resume-main">
+            <!-- Summary Section -->
+            <section class="section summary-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 14C16 14 20 16 20 18V20H4V18C4 16 8 14 12 14Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Professional Summary
+                    </h3>
+                </div>
+                <div class="section-content">
+                    <p class="summary-text">
+                        Passionate Senior Web Developer with 8+ years of experience building scalable, 
+                        user-centric web applications. Expertise in modern JavaScript frameworks, 
+                        cloud technologies, and agile development practices. Proven track record of 
+                        leading cross-functional teams and delivering high-quality solutions that 
+                        drive business growth and enhance user experience.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="section skills-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="12,2 15.09,8.26 22,9 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9 8.91,8.26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Technical Skills
+                    </h3>
+                </div>
+                <div class="section-content">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4 class="category-title">Frontend</h4>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">React.js</span>
+                                        <span class="skill-level">95%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">TypeScript</span>
+                                        <span class="skill-level">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Vue.js</span>
+                                        <span class="skill-level">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">CSS3/SASS</span>
+                                        <span class="skill-level">92%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="92"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4 class="category-title">Backend</h4>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Node.js</span>
+                                        <span class="skill-level">88%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="88"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Python</span>
+                                        <span class="skill-level">82%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="82"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">PostgreSQL</span>
+                                        <span class="skill-level">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">MongoDB</span>
+                                        <span class="skill-level">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4 class="category-title">DevOps & Tools</h4>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">AWS</span>
+                                        <span class="skill-level">78%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="78"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Docker</span>
+                                        <span class="skill-level">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Git</span>
+                                        <span class="skill-level">95%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">CI/CD</span>
+                                        <span class="skill-level">72%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="72"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="section experience-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Work Experience
+                    </h3>
+                </div>
+                <div class="section-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h4 class="job-title">Senior Web Developer</h4>
+                                    <div class="job-meta">
+                                        <span class="company">TechCorp Solutions</span>
+                                        <span class="duration">2021 - Present</span>
+                                        <span class="location">San Francisco, CA</span>
+                                    </div>
+                                </div>
+                                <ul class="job-responsibilities">
+                                    <li>Lead development of React-based web applications serving 100K+ users</li>
+                                    <li>Architected microservices infrastructure reducing deployment time by 60%</li>
+                                    <li>Mentored junior developers and established coding standards</li>
+                                    <li>Implemented automated testing strategies improving code coverage to 95%</li>
+                                </ul>
+                                <div class="job-technologies">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h4 class="job-title">Full Stack Developer</h4>
+                                    <div class="job-meta">
+                                        <span class="company">Digital Innovations Inc.</span>
+                                        <span class="duration">2019 - 2021</span>
+                                        <span class="location">San Francisco, CA</span>
+                                    </div>
+                                </div>
+                                <ul class="job-responsibilities">
+                                    <li>Developed and maintained e-commerce platform handling $2M+ in transactions</li>
+                                    <li>Optimized database queries resulting in 40% performance improvement</li>
+                                    <li>Collaborated with UX team to implement responsive design patterns</li>
+                                    <li>Integrated third-party APIs and payment processing systems</li>
+                                </ul>
+                                <div class="job-technologies">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h4 class="job-title">Frontend Developer</h4>
+                                    <div class="job-meta">
+                                        <span class="company">StartupXYZ</span>
+                                        <span class="duration">2017 - 2019</span>
+                                        <span class="location">San Francisco, CA</span>
+                                    </div>
+                                </div>
+                                <ul class="job-responsibilities">
+                                    <li>Built responsive web applications using modern JavaScript frameworks</li>
+                                    <li>Implemented pixel-perfect designs with cross-browser compatibility</li>
+                                    <li>Optimized application performance achieving 95+ Lighthouse scores</li>
+                                    <li>Participated in agile development process and code reviews</li>
+                                </ul>
+                                <div class="job-technologies">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">SASS</span>
+                                    <span class="tech-tag">Webpack</span>
+                                    <span class="tech-tag">Jest</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h4 class="job-title">Junior Web Developer</h4>
+                                    <div class="job-meta">
+                                        <span class="company">WebAgency Pro</span>
+                                        <span class="duration">2016 - 2017</span>
+                                        <span class="location">San Francisco, CA</span>
+                                    </div>
+                                </div>
+                                <ul class="job-responsibilities">
+                                    <li>Developed client websites using HTML, CSS, and JavaScript</li>
+                                    <li>Maintained and updated existing web applications</li>
+                                    <li>Collaborated with design team to implement visual concepts</li>
+                                    <li>Learned modern development practices and version control</li>
+                                </ul>
+                                <div class="job-technologies">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">jQuery</span>
+                                    <span class="tech-tag">PHP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="section education-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 10V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 20H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Education
+                    </h3>
+                </div>
+                <div class="section-content">
+                    <div class="education-grid">
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 10V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 20H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 16V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="education-content">
+                                <h4 class="degree">Bachelor of Science in Computer Science</h4>
+                                <div class="education-meta">
+                                    <span class="institution">University of California, Berkeley</span>
+                                    <span class="graduation">2012 - 2016</span>
+                                </div>
+                                <p class="education-description">
+                                    Graduated Magna Cum Laude with focus on software engineering and web technologies. 
+                                    Relevant coursework: Data Structures, Algorithms, Database Systems, Web Development.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L3 7L12 12L21 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 17L12 22L21 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 12L12 17L21 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="education-content">
+                                <h4 class="degree">AWS Certified Solutions Architect</h4>
+                                <div class="education-meta">
+                                    <span class="institution">Amazon Web Services</span>
+                                    <span class="graduation">2022</span>
+                                </div>
+                                <p class="education-description">
+                                    Professional certification demonstrating expertise in designing distributed 
+                                    systems and applications on AWS platform.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="section projects-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Featured Projects
+                    </h3>
+                </div>
+                <div class="section-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4 class="project-title">E-Commerce Platform</h4>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Live">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" title="View Code">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 19C4.7 19 1 15.3 1 11S4.7 3 9 3 17 6.7 17 11C17 12.4 16.6 13.7 15.9 14.8L22 20.9L20.9 22L14.8 15.9C13.7 16.6 12.4 17 11 17H9V19Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Full-stack e-commerce solution with React frontend, Node.js backend, 
+                                and PostgreSQL database. Features include user authentication, 
+                                payment processing, and admin dashboard.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4 class="project-title">Task Management App</h4>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Live">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" title="View Code">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 19C4.7 19 1 15.3 1 11S4.7 3 9 3 17 6.7 17 11C17 12.4 16.6 13.7 15.9 14.8L22 20.9L20.9 22L14.8 15.9C13.7 16.6 12.4 17 11 17H9V19Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Collaborative task management application with real-time updates, 
+                                team collaboration features, and advanced project tracking capabilities 
+                                built with Vue.js and Firebase.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Vuetify</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4 class="project-title">Analytics Dashboard</h4>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Live">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" title="View Code">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 19C4.7 19 1 15.3 1 11S4.7 3 9 3 17 6.7 17 11C17 12.4 16.6 13.7 15.9 14.8L22 20.9L20.9 22L14.8 15.9C13.7 16.6 12.4 17 11 17H9V19Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Comprehensive analytics dashboard with real-time data visualization, 
+                                custom reports, and interactive charts for business intelligence 
+                                using React and D3.js.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section class="section achievements-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Key Achievements
+                    </h3>
+                </div>
+                <div class="section-content">
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L3.09 8.26L4 21L12 17L20 21L20.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Team Leadership</h4>
+                                <p class="achievement-description">
+                                    Led a team of 5 developers in delivering a critical project 2 weeks ahead of schedule
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Performance Optimization</h4>
+                                <p class="achievement-description">
+                                    Improved application performance by 60% through code optimization and caching strategies
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Code Quality</h4>
+                                <p class="achievement-description">
+                                    Established coding standards and testing practices, achieving 95% code coverage
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7007C21.7033 16.0473 20.9999 15.5885 20.2 15.3949" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 3.13C16.8003 3.32351 17.5037 3.78233 18.0098 4.43569C18.5159 5.08906 18.8002 5.89946 18.8002 6.735C18.8002 7.57054 18.5159 8.38094 18.0098 9.03431C17.5037 9.68767 16.8003 10.1465 16 10.34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Mentorship</h4>
+                                <p class="achievement-description">
+                                    Mentored 8 junior developers, with 100% promotion rate within 18 months
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="resume-footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    This resume was built with modern web technologies and is available online at 
+                    <a href="#" class="footer-link">sarahjohnson.dev/resume</a>
+                </p>
+                <p class="footer-date">Last updated: March 2024</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="responsive-resume.js"></script>
+</body>
+</html>
+
